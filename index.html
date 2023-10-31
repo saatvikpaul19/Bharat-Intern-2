@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb46a2983d.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+<div id="header">
+    <div class="container">
+        <nav> 
+            <img src="portfolio/Screenshot 2023-10-21 175525.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi,I'm <span>Saatvik Paul</span><br>from india</h1>
+        </div>
+    </div>
+</div>
+<!--------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="portfolio\WhatsApp Image 2023-10-16 at 22.59.00_ab92728e.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                    As a third-year student majoring in Computer Science Engineering, I bring a fresh and dynamic perspective to the field of web development. My academic background, technical skills and passion for web development make me a strong candidate for this position, even though I haven't had the opportunity before. 
+ My education in computer science and engineering gave me  a good understanding of software development principles, algorithms and programming languages. Now I  know how to code in HTML, Python and other important web development languages. In addition, my coursework gave me  ideas such as data series management, network security and customer experience configuration, which gave me a balanced knowledge. I have actively sought  opportunities to apply my skills and knowledge through personal projects and independent study, although I  have  formal internship experience in karomi technology private Ltd. I have worked on various web development projects, including creating interactive user interfaces, back-end functions and responsive websites. These companies gave me the opportunity to strengthen my coding skills, critical thinking  and accuracy. 
+ My eagerness to learn and adapt to new technologies and frameworks is one of my most important strengths. As a student, I was always proactive in keeping up with the latest advances in design and  web development. I am confident in my ability to  grasp new ideas quickly and use them to my advantage in the workplace. 
+ Additionally, I am an exceptionally energetic and dedicated individual with a proven passion for web development. I am constantly looking for new challenges and opportunities to acquire new skills. I can work independently and  in a collaborative team  and I am a fast learner. I wish to share my knowledge and originality  to provide excellent online solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Advanced</li>
+                        <li><span>WEB DEVELOPMENT</span><br>Advanced</li>
+                        <li><span>APP DEVELOPMENT</span><br>Intermediate</li>
+                    </ul>
+                </div>  
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        
+                        <li><span>Internships</span><br>Machine Learning , Artificial Intelligence (AI)
+                            Karomi Technology Pvt Ltd, Virtual
+                            Jul 2023 - Aug 2023
+                            Interned in the Research and development department for
+                            Artificial intelligence and Machine learning.</li>
+                            
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Batchelor</span><br>B.Tech, Computer Science & Engineering
+                            SRM Institute Of Science And Technology
+                            2021 - 2025
+                            CGPA: 9.40/10</li>
+                        <li><span>Schooling</span><br>Senior Secondary (XII), Science
+                            Manav Rachna International School
+                            (CBSE board)
+                            Year of completion: 2021
+                            Percentage: 86.40%
+                            Secondary (X)
+                            Manav Rachna International School
+                            (CBSE board)
+                            Year of completion: 2019
+                            Percentage: 84.60%
+                            </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designe</h2>
+                
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX</h2>
+                
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App DEVELOPMENT</h2>
+                
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"></div>
+                <h1 class="sub-title">Contact Me</h1>
+                <p>saatvikpaul19@gmail.com <br>9891101566</p><br>
+                <div class="social-icons">
+                    <a href="https://instagram.com/saatvik_19?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/saatvik-paul-9a45081b4"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="portfolio\SaatvikPaul_Resume.pdf">Download RESUME</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html> 
